@@ -1,5 +1,12 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("image/default-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s;
 }
 
 h2 {
@@ -17,12 +24,21 @@ form {
 input {
     width: 400px;
     height: 30px;
+    background-color: rgb(240, 255, 255, 0.6);
+    border: none;
     font-size: 22px;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 12px;
     padding: 8px;
 }
 
+.weather-info {
+    background-color: rgb(240, 255, 255, 0.6);
+    border-radius: 20px;
+    width: 500px;
+    transition: font 5s;
+}
 .weather-general, .weather-detail {
     display: flex;
     flex-direction: column;

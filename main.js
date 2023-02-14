@@ -85,4 +85,33 @@ function displayWeatherData(data) {
     temperature.textContent = data["temperature"];
     feelsLike.textContent = data["feels_like"];
     humidity.textContent = data["humidity"];
+
+    changeBackground(data["main"]);
+}
+
+function changeBackground(weatherCondition) {
+    let backgroundImageURL;
+
+    switch (weatherCondition) {
+        default:
+            backgroundImageURL = "url('image/default-background.jpg')";
+            break;
+        case "Thunderstorm":
+            backgroundImageURL = "url('image/thunderstorm.jpg')";
+            break;
+        case "Clouds":
+            backgroundImageURL = "url('image/clouds.jpg')";
+            break;
+        case "Drizzle":
+            backgroundImageURL = "url('image/drizzle.jpg')";
+            break;
+        case "Rain":
+            backgroundImageURL = "url('image/rain.jpg')";
+            break;
+        case "Snow":
+            backgroundImageURL = "url('image/snow.jpg')";
+            break;
+    }
+
+    document.body.style.backgroundImage = backgroundImageURL;
 }
