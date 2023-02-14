@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="What city are you interested in today?">
+    </form>
+    <div class="error-message"></div>
+    <div class="weather-info">
+        <div class="weather-general">
+            <div class="general-container" id="city">Imaginary Land</div>
+            <div class="general-container" id="timezone">GMT+0</div>
+            <div class="general-container" id="main">Quite sunny</div>
+            <div class="general-container" id="description">sunshines everywhere</div>
+        </div>
+        <div class="weather-detail">
+            <div class="detail-container" id="temperature">
+                <h2>Temperature:</h2>
+                <div class="info" id="temperature">69 °C</div>
+            </div>
+            <div class="detail-container" id="feels-like">
+                <h2>Feels like:</h2>
+                <div class="info" id="feels-like">68 °C</div>
+            </div>
+            <div class="detail-container" id="humidity">
+                <h2>Humidity:</h2>
+                <div class="info" id="humidity">68%</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
